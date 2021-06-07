@@ -17,9 +17,10 @@ end
 bot.message do |message|
   if blacklist.include?(message.content.downcase.delete(' '))
     message.respond "You're weird #{message.user.mention}"
-    message.respond "Check this out later #{message.server.roles[2].mention}"
+    message.respond "Check this out later #{message.server.roles[28].mention}"
   end
 end
 
 
 bot.run
+
