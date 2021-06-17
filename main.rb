@@ -14,7 +14,7 @@ end
 
 bot.message do |message|
   blacklist.each do |word|
-    if message.content.split(" ").include?(word)
+    if message.content.split(" ").include?(word) 
       message.respond "You're weird #{message.user.mention}"
       message.respond "Check this out later #{message.server.roles[30].mention}"
     end
